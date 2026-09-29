@@ -1,10 +1,9 @@
-from PyPDF2 import PdfReader
+from pypdf import PdfReader
 
 
 def extract_text_from_pdf(pdf_file):
 
     try:
-        # File ko beginning par le jao
         pdf_file.seek(0)
 
         reader = PdfReader(pdf_file)
